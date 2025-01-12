@@ -83,7 +83,7 @@ global.fgsc = 'https://github.com/KING-HANSA/DEW-XMD'
 global.fgyt = 'https://youtube.com/@KingHansa'
 global.fgpyp = 'https://youtube.com/@KingHansa'
 global.fglog = 'https://i.imgur.com/JL9z4b0.jpeg'
-global.thumb = fs.readFileSync('./assets/DewBotLogo.jpg')
+global.thumb = fs.readFileSync('./assets/DENULOGO.jpg')
 
 global.wait = '⏳'
 global.rwait = '⏳'
