@@ -1,6 +1,6 @@
 
 {
-    "name": "DEW-XMD",
+    "name": "DENUWAN-XMD",
     "version": "3.2.9",
     "description": "Advanced WhatsApp",
     "main": "index.js",
@@ -29,16 +29,16 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/KING-HANSA/DEW-XMD",
+    "homepage": "https://github.com/Denuwan-md/Denuwan-md",
     "author": {
         "name": "GlobalTechInfo"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/KING-HANSA/DEW-XMD.git"
+        "url": "git+https://github.com/Denuwan-md/Denuwan-md.git"
     },
     "bugs": {
-        "url": "https://github.com/KING-HANSA/DEW-XMD/issues"
+        "url": "https://github.com/Denuwan-md/Denuwan-md/issues"
     },
     "license": "Apache License 2.0",
     "dependencies": {
