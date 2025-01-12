@@ -1,7 +1,8 @@
+
 {
-    "name": "Denuwan-md",
-    "version": "4.0.0",
-    "description": "Advanced AI",
+    "name": "DEW-XMD",
+    "version": "3.2.9",
+    "description": "Advanced WhatsApp",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -22,24 +23,24 @@
         "whatsapp",
         "js-whatsapp",
         "whatsapp",
-        "denuwan-bot",
-        "denuwan-bot-md",
+        "ultra-bot",
+        "Global-bot-md",
         "multi-device",
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/Denuwan-md/Denuwan-md/tree/main",
+    "homepage": "https://github.com/KING-HANSA/DEW-XMD",
     "author": {
         "name": "GlobalTechInfo"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Denuwan-md/Denuwan-md/tree/main"
+        "url": "git+https://github.com/KING-HANSA/DEW-XMD.git"
     },
     "bugs": {
-        "url": "https://github.com/Denuwan-md/Denuwan-md/tree/main"
+        "url": "https://github.com/KING-HANSA/DEW-XMD/issues"
     },
-    "license": "Apache-2.0",
+    "license": "Apache License 2.0",
     "dependencies": {
         "@adiwajshing/keyed-db": "^0.2.4",
         "@google/generative-ai": "0.1.3",
@@ -120,15 +121,5 @@
     },
     "devDependencies": {
         "prettier": "^3.2.5"
-    },
-    "contributors": [
-    {
-      "name": "Qasim Ali",
-      "role": "Lead Developer"
-    },
-    {
-      "name": "GlobalTechInfo",
-      "role": "Maintainer"
     }
-  ]
-    }
+}
