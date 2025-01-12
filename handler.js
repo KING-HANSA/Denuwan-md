@@ -110,7 +110,7 @@ export async function handler(chatUpdate) {
       let chat = global.db.data.chats[m.chat]
       if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
       if (chat) {
-        if (!('antiDelete' in chat)) chat.antiDelete = false
+        if (!('antiDelete' in chat)) chat.antiDelete = true
         if (!('antiLink' in chat)) chat.antiLink = false
         if (!('antiSticker' in chat)) chat.antiSticker = false
         if (!('antiToxic' in chat)) chat.antiToxic = false
@@ -125,13 +125,13 @@ export async function handler(chatUpdate) {
         if (!('sWelcome' in chat)) chat.sWelcome = ''
         if (!('useDocument' in chat)) chat.useDocument = false
         if (!('viewOnce' in chat)) chat.viewOnce = false
-        if (!('viewStory' in chat)) chat.viewStory = false
+        if (!('viewStory' in chat)) chat.viewStory = true
         if (!('welcome' in chat)) chat.welcome = false
         if (!('chatbot' in chat)) chat.chatbot = false
         if (!isNumber(chat.expired)) chat.expired = 0
       } else
         global.db.data.chats[m.chat] = {
-          antiDelete: false,
+          antiDelete: true,
           antiLink: false,
           antiSticker: false,
           antiToxic: false,
@@ -148,7 +148,7 @@ export async function handler(chatUpdate) {
           sWelcome: '',
           useDocument: false,
           viewOnce: false,
-          viewStory: false,
+          viewStory: true,
           welcome: false,
           chatbot: false,
         }
@@ -541,8 +541,8 @@ export async function participantsUpdate({ id, participants, action }) {
             ppgp = await this.profilePictureUrl(id, 'image')
           } catch (error) {
             console.error(`Error retrieving profile picture: ${error}`)
-            pp = 'https://i.ibb.co/kSVpSJJ/6871.jpg' // Assign default image URL
-            ppgp = 'https://i.ibb.co/1bL0z5g/350.jpg' // Assign default image URL
+            pp = 'https://i.ibb.co/9HY4wjz/a4c0b1af253197d4837ff6760d5b81c0.jpg' // Assign default image URL
+            ppgp = 'https://i.ibb.co/9HY4wjz/a4c0b1af253197d4837ff6760d5b81c0.jpg' // Assign default image URL
           } finally {
             let text = (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user')
               .replace('@group', await this.getName(id))
@@ -571,10 +571,10 @@ export async function participantsUpdate({ id, participants, action }) {
                 contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    title: 'Denuwan Bot',
+                    title: 'Global Bot',
                     body: 'Welcome to Group',
                     thumbnailUrl: welcomeApiUrl,
-                    sourceUrl: 'https://whatsapp.com/channel/0029Vb2bq7tCHDyi6w2zfG0r',
+                    sourceUrl: 'https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },
@@ -598,8 +598,8 @@ export async function participantsUpdate({ id, participants, action }) {
             ppgp = await this.profilePictureUrl(id, 'image')
           } catch (error) {
             console.error(`Error retrieving profile picture: ${error}`)
-            pp = 'https://i.ibb.co/L5tRZc0/6077.jpg' // Assign default image URL
-            ppgp = 'https://i.ibb.co/7gFb0j3/3114.jpg' // Assign default image URL
+            pp = 'https://i.ibb.co/9HY4wjz/a4c0b1af253197d4837ff6760d5b81c0.jpg' // Assign default image URL
+            ppgp = 'https://i.ibb.co/9HY4wjz/a4c0b1af253197d4837ff6760d5b81c0.jpg' // Assign default image URL
           } finally {
             let text = (chat.sBye || this.bye || conn.bye || 'HELLO, @user').replace(
               '@user',
@@ -631,7 +631,7 @@ export async function participantsUpdate({ id, participants, action }) {
                     title: 'Global Bot',
                     body: 'Goodbye from  Group',
                     thumbnailUrl: leaveApiUrl,
-                    sourceUrl: 'https://whatsapp.com/channel/0029Vb2bq7tCHDyi6w2zfG0r',
+                    sourceUrl: 'https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },
