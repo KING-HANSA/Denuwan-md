@@ -20,7 +20,7 @@ Here are some ideas to get you started:
 
 <p align="center">
 <a href="https://github.com/Denuwan-md/Denuwan-md">
-    <img src=https://i.ibb.co/rfyrgDL/9030.jpg"  width="700px                     
+    <img src=https://i.ibb.co/JH6G4XL/1349.jpg"  width="700px                     
 
 
 
