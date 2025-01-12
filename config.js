@@ -7,11 +7,11 @@ import fs from 'fs'
 import dotenv from 'dotenv'
 dotenv.config()
 
-const defaultOwner = '94778721239';
+const defaultOwner = '94704463479';
 
 
 // Check for the OWNERS environment variable; if not found, use the default
-const ownervb = process.env.OWNERS || process.env.OWNER_NUMBER || '94778721239';  // put your number here
+const ownervb = process.env.OWNERS || process.env.OWNER_NUMBER || '';  // put your number here
 
 const ownerlist = ownervb.split(';');
 
@@ -20,9 +20,9 @@ for (let i = 0; i < ownerlist.length; i++) {
     global.owner.push([ownerlist[i], true]);
 }
 //
-global.botname = process.env.BOTNAME || 'DEW-XMD';
-global.pairingNumber = process.env.BOT_NUMBER || '94778721239';  // put your number here
-global.SESSION_ID = process.env.SESSION_ID || '7JonVbgS#SjSZR6KrO51ueXxv8lFKjctF2eCVkAFNwB9PHgkKnxs';  // put your session id here
+global.botname = process.env.BOTNAME || 'DENUWAN-XMD';
+global.pairingNumber = process.env.BOT_NUMBER || '';  // put your number here
+global.SESSION_ID = process.env.SESSION_ID || '';  // put your session id here
 
 global.mods = []
 global.prems = []
@@ -74,15 +74,15 @@ global.APIKeys = {
 
 // Sticker WM
 global.premium = 'true'
-global.packname = 'DEW-MD'
-global.author = 'HansaDewmina'
+global.packname = 'DENUWAN-MD'
+global.author = 'Denuwan'
 global.menuvid = 'https://i.imgur.com/2U2K9YA.mp4'
-global.igfg = ' Follow on Instagram\nhttps://www.instagram.com/hansa_dewmina_lk'
+global.igfg = ' Follow on Instagram\nhttps://www.instagram.com/denuwan'
 global.dygp = 'https://whatsapp.com/channel/0029Varwcfc7YSd60AulNF2h'
-global.fgsc = 'https://github.com/KING-HANSA/DEW-XMD'
-global.fgyt = 'https://youtube.com/@KingHansa'
-global.fgpyp = 'https://youtube.com/@KingHansa'
-global.fglog = 'https://i.imgur.com/JL9z4b0.jpeg'
+global.fgsc = 'https://github.com/Denuwan-md'
+global.fgyt = 'https://youtube.com/@Denuwan'
+global.fgpyp = 'https://youtube.com/@Denuwan'
+global.fglog = 'https://i.ibb.co/0rWyh4V/9564.jpg'
 global.thumb = fs.readFileSync('./assets/DENULOGO.jpg')
 
 global.wait = '⏳'
