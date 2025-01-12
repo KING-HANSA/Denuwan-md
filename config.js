@@ -1,3 +1,4 @@
+
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
@@ -6,11 +7,11 @@ import fs from 'fs'
 import dotenv from 'dotenv'
 dotenv.config()
 
-const defaultOwner = '94704463479';
+const defaultOwner = '94778721239';
 
 
 // Check for the OWNERS environment variable; if not found, use the default
-const ownervb = process.env.OWNERS || process.env.OWNER_NUMBER || '' ; // put your number here
+const ownervb = process.env.OWNERS || process.env.OWNER_NUMBER || '94778721239';  // put your number here
 
 const ownerlist = ownervb.split(';');
 
@@ -19,13 +20,13 @@ for (let i = 0; i < ownerlist.length; i++) {
     global.owner.push([ownerlist[i], true]);
 }
 //
-global.botname = process.env.BOTNAME || 'DENUWAN-MD';
-global.pairingNumber = process.env.BOT_NUMBER || '' ;  // put your number here
-global.SESSION_ID = process.env.SESSION_ID || '' ;  // put your session id here
+global.botname = process.env.BOTNAME || 'DEW-XMD';
+global.pairingNumber = process.env.BOT_NUMBER || '94778721239';  // put your number here
+global.SESSION_ID = process.env.SESSION_ID || '7JonVbgS#SjSZR6KrO51ueXxv8lFKjctF2eCVkAFNwB9PHgkKnxs';  // put your session id here
 
 global.mods = []
 global.prems = []
-global.allowed = ['94704463479', '94728899640']
+global.allowed = ['923444844060', '923051391007']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = [
@@ -42,7 +43,7 @@ global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
 global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
 global.lolkeysapi = ['GataDios']
 
-global.canal = 'https://whatsapp.com/channel/0029Vb2bq7tCHDyi6w2zfG0r'
+global.canal = 'https://whatsapp.com/channel/0029Varwcfc7YSd60AulNF2h'
 
 
 global.APIs = {
@@ -73,16 +74,16 @@ global.APIKeys = {
 
 // Sticker WM
 global.premium = 'true'
-global.packname = 'DENUWAN-MD'
-global.author = 'DENUWAN&DENU'
-global.menuvid = 'https://i.ibb.co/JH6G4XL/1349.jpg'
-global.igfg = ' Follow on Instagram\nhttps://www.instagram.com/global.hinfo'
-global.dygp = 'https://whatsapp.com/channel/0029Vb2bq7tCHDyi6w2zfG0r'
-global.fgsc = 'https://github.com/Denuwan-md/Denuwan-md/tree/main'
-global.fgyt = 'https://youtube.com/@sldenuwan-w9l?si=1YZ1p3GWjlKRTXdp'
-global.fgpyp = 'https://youtube.com/@sldenuwan-w9l?si=1YZ1p3GWjlKRTXdp'
-global.fglog = 'https://i.ibb.co/JH6G4XL/1349.jpg'
-global.thumb = fs.readFileSync('./assets/A.jpg')
+global.packname = 'DEW-MD'
+global.author = 'HansaDewmina'
+global.menuvid = 'https://i.imgur.com/2U2K9YA.mp4'
+global.igfg = ' Follow on Instagram\nhttps://www.instagram.com/hansa_dewmina_lk'
+global.dygp = 'https://whatsapp.com/channel/0029Varwcfc7YSd60AulNF2h'
+global.fgsc = 'https://github.com/KING-HANSA/DEW-XMD'
+global.fgyt = 'https://youtube.com/@KingHansa'
+global.fgpyp = 'https://youtube.com/@KingHansa'
+global.fglog = 'https://i.imgur.com/JL9z4b0.jpeg'
+global.thumb = fs.readFileSync('./assets/DewBotLogo.jpg')
 
 global.wait = '⏳'
 global.rwait = '⏳'
