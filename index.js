@@ -7,7 +7,7 @@ import path from 'path'
 import { fileURLToPath } from 'url';
 
 figlet(
-  'DEW-XMD',
+  'DENUWAN-XMD',
   {
     font: 'Ghost',
     horizontalLayout: 'default',
